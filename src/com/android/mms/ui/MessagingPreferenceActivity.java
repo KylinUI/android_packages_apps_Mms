@@ -73,6 +73,9 @@ public class MessagingPreferenceActivity extends PreferenceActivity
     public static final String AUTO_DELETE              = "pref_key_auto_delete";
     public static final String GROUP_MMS_MODE           = "pref_key_mms_group_mms";
 
+    // Custom font size
+    public static final String MESSAGE_FONT_SIZE        = "pref_key_mms_message_font_size";
+
     // Unicode
     public static final String UNICODE_STRIPPING            = "pref_key_unicode_stripping";
     public static final String UNICODE_STRIPPING_VALUE      = "pref_key_unicode_stripping_value";
