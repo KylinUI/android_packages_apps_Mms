@@ -219,6 +219,11 @@
     <PreferenceCategory android:title="@string/pref_extra_settings"
         android:key="pref_key_extra_settings" >
 
+        <CheckBoxPreference android:key="pref_key_mms_direct_call"
+            android:title="@string/direct_call_title"
+            android:summary="@string/direct_call_summary" 
+            android:defaultValue="false" />
+
         <ListPreference android:key="pref_key_mms_message_font_size"
             android:defaultValue="18"
             android:title="@string/pref_title_mms_message_font_size"
