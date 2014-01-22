@@ -2944,7 +2944,7 @@ public class ComposeMessageActivity extends Activity
 
         // Add to Blacklist item (if enabled) and we are running on CyanogenMod
         // This allows the app to be run on non-blacklist enabled roms (including Stock)
-        if (MessageUtils.isCyanogenMod(this)) {
+        if (MessageUtils.isKylinMod(this)) {
             if (BlacklistUtils.isBlacklistEnabled(this)) {
                 menu.add(0, MENU_ADD_TO_BLACKLIST, 0, R.string.add_to_blacklist)
                         .setIcon(R.drawable.ic_block_message_holo_dark)
@@ -4788,6 +4788,8 @@ public class ComposeMessageActivity extends Activity
                 int count = mMsgListView.getCount();
                 for (int i = 0; i < count; i++) {
                     MessageListItem v = (MessageListItem) mMsgListView.getChildAt(i);
+                    if (v == null)
+                        break;
                     MessageItem listItem = v.getMessageItem();
                     if (item.equals(listItem)) {
                         v.updateDelayCountDown();
