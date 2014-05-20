@@ -16,5 +16,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="pref_mms_notification_vibrate_normal">正常</string>
+  <string name="template_edit">編輯</string>
 </resources>
